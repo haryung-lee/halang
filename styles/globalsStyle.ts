@@ -29,6 +29,11 @@ export const GlobalStyle = createGlobalStyle`
     border: none;
   }
 
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.textColor};
+  }
+
   @font-face {
     font-family: 'IBMPlexSansKR';
     src: url('assets/fonts/IBMPlexSansKR-Regular.ttf');
