@@ -88,9 +88,9 @@ const ThemeChange = styled.button`
 
 const HeaderNavLinks = styled.div`
   ${flexCenter};
-  font-size: ${({ theme }) => theme.fontSize.sm};
+  font-size: ${({ theme }) => theme.fontSize.md};
 
   a {
-    padding: 1.6rem;
+    margin: 1.6rem;
   }
 `;

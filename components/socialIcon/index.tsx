@@ -27,14 +27,22 @@ const SocialIcon = ({ kind, href, size = '8' }: Props) => {
   const SocialSvg: React.FC<React.SVGProps<SVGSVGElement>> = components[kind];
 
   return (
-    <a target="_blank" rel="noopener noreferrer" href={href}>
+    <Anchor target="_blank" rel="noopener noreferrer" href={href}>
       <SocialKink aria-label={`사용자의 ${kind}로 이동하는 버튼`}>
         {kind}
       </SocialKink>
       <SocialSvg width={size} height={size} />
-    </a>
+    </Anchor>
   );
 };
+
+const Anchor = styled.a`
+  &:hover {
+    svg {
+      opacity: 0.7;
+    }
+  }
+`;
 
 const SocialKink = styled.span`
   display: none;
