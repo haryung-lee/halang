@@ -3,12 +3,15 @@ import { reset } from 'styled-reset';
 
 export const GlobalStyle = createGlobalStyle`
   ${reset}
+
   * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   }
+
   html, body {
     width: 100%;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: IBMPlexSansKRRegular, sans-serif;
 
     -ms-overflow-style: none;
     scrollbar-width: none;
