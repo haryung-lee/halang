@@ -12,7 +12,7 @@ declare module 'styled-components' {
       xxl: string;
       xxxl: string;
     };
-    colors: {
+    color: {
       bgColor: string;
       bgColor2: string;
       primaryRed: string;

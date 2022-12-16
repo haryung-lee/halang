@@ -59,8 +59,8 @@ const Container = styled.div`
   max-width: 42rem;
   margin: 0 auto;
   padding: 0 3rem;
-  background-color: ${({ theme }) => theme.colors.bgColor};
-  color: ${({ theme }) => theme.colors.textColor};
+  background-color: ${({ theme }) => theme.color.bgColor};
+  color: ${({ theme }) => theme.color.textColor};
 `;
 
 const Header = styled.header`
@@ -76,11 +76,11 @@ const Component = styled.div`
 `;
 
 const ThemeChange = styled.button`
-  background-color: ${({ theme }) => theme.colors.bgColor};
+  background-color: ${({ theme }) => theme.color.bgColor};
   width: 3rem;
   height: 3rem;
   svg {
-    color: ${({ theme }) => theme.colors.textColor};
+    color: ${({ theme }) => theme.color.textColor};
     width: 1.5rem;
     height: 1.5rem;
   }

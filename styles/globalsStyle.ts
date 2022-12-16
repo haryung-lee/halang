@@ -22,8 +22,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme.colors.bgColor2};
-    color: ${({ theme }) => theme.colors.textColor};
+    background-color: ${({ theme }) => theme.color.bgColor2};
+    color: ${({ theme }) => theme.color.textColor};
   }
 
   button {
@@ -34,7 +34,7 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.textColor};
+    color: ${({ theme }) => theme.color.textColor};
   }
 
   @font-face {

@@ -16,7 +16,7 @@ const fontSize = {
 
 export const darkTheme: DefaultTheme = {
   fontSize,
-  colors: {
+  color: {
     bgColor: '#27272A',
     bgColor2: '#18181B',
     primaryRed: '#F05454',
@@ -27,7 +27,7 @@ export const darkTheme: DefaultTheme = {
 
 export const lightTheme: DefaultTheme = {
   fontSize,
-  colors: {
+  color: {
     bgColor: '#F4F4F5',
     bgColor2: '#E4E4E7',
     primaryRed: '#F05454',

@@ -80,7 +80,7 @@ const Contents = styled.div`
     margin-bottom: 2rem;
   }
   &:first-child {
-    background-color: ${({ theme }) => theme.colors.bgColor2};
+    background-color: ${({ theme }) => theme.color.bgColor2};
     padding: 1rem;
     border-radius: 0.5rem;
     height: 10rem;
@@ -100,7 +100,7 @@ const English = styled.span`
 `;
 
 const Paragraph = styled.p`
-  color: ${({ theme }) => theme.colors.textColor};
+  color: ${({ theme }) => theme.color.textColor};
   opacity: 0.8;
   margin-top: 0.5rem;
   text-align: justify;
@@ -118,8 +118,8 @@ const List = styled.li`
     &:hover {
       text-decoration: underline;
       cursor: pointer;
-      background-color: ${({ theme }) => theme.colors.primaryRed};
-      color: ${({ theme }) => theme.colors.bgColor};
+      background-color: ${({ theme }) => theme.color.primaryRed};
+      color: ${({ theme }) => theme.color.bgColor};
     }
   }
 
