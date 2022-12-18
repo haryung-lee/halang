@@ -6,8 +6,6 @@ import WhackAAmoleGame from 'components/whackAMoleGame';
 const WIDTH = 100;
 const HEIGHT = 100;
 
-// 1ms = 0.001s
-// 1분 = 60m = 60 * 1000ms = 60 * 1000 * 0.001s = 60s
 const TIMER = 10 * 1000;
 
 const Games = () => {
@@ -59,7 +57,7 @@ const Games = () => {
   const tick = () => {
     const targets = document.querySelectorAll('.target');
     const randomTarget = targets[Math.floor(Math.random() * targets.length)];
-    // mole 아니면 bomb 선택하기
+
     const randomMoleOrBomb = Math.floor(Math.random() * 2);
     const moleOrBomb = randomMoleOrBomb === 0 ? '.mole' : '.bomb';
     const up = randomTarget.querySelector(moleOrBomb);
