@@ -188,7 +188,7 @@ const Target = styled.div`
     bottom: -3rem;
     top: 90%;
     left: 50%;
-    transform: translate(-50%, -85%);
+    transform: translate(-50%);
   }
 
   .dead-mole,
@@ -197,6 +197,7 @@ const Target = styled.div`
   .touch-bomb {
     cursor: pointer;
     top: 15%;
-    left: 23%;
+    left: 50%;
+    transform: translate(-50%);
   }
 `;
