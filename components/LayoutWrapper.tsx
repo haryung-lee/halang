@@ -57,6 +57,7 @@ const Title = styled.h1`
 
 const Container = styled.div`
   max-width: 42rem;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 0 3rem;
   background-color: ${({ theme }) => theme.color.bgColor};
@@ -73,6 +74,10 @@ const Header = styled.header`
 const Component = styled.div`
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  & > *:nth-child(2) {
+    flex-grow: 1;
+  }
 `;
 
 const ThemeChange = styled.button`

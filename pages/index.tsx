@@ -2,11 +2,11 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import { flexCenter, flexCenterColumn } from 'styles/utils';
 
-import Game from './game';
+import Game from './whackAMoleGame';
 
 const game = [
   {
-    id: 'game',
+    id: 'whackAMoleGame',
     title: '두더지 게임',
     description: '제한 시간 내 두더지를 잡아보세요✋',
     img: '/assets/images/mole-logo.png',
@@ -60,7 +60,7 @@ const Card = styled.li`
   }
   transition: transform 0.2s ease-in-out;
   &:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
     opacity: 0.8;
   }
 `;
