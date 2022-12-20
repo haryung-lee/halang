@@ -32,6 +32,10 @@ export const GlobalStyle = createGlobalStyle`
     border: none;
   }
 
+  input {
+    border: none;
+  }
+
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.color.textColor};
