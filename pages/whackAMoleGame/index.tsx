@@ -113,9 +113,11 @@ const Games = () => {
 export default Games;
 
 const Component = styled.div`
+  width: 40rem;
   display: flex;
   flex-direction: column;
   position: relative;
+  margin: 0 auto;
 `;
 
 const Timer = styled.div`

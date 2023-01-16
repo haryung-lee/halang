@@ -6,17 +6,17 @@ import Game from './whackAMoleGame';
 
 const game = [
   {
-    id: 'whackAMoleGame',
+    url: 'whackAMoleGame',
     title: '두더지 게임',
     description: '제한 시간 내 두더지를 잡아보세요✋',
     img: '/assets/images/mole-logo.png',
     children: Game,
   },
   {
-    id: '/',
-    title: '몰라용',
-    description: '!',
-    img: '/assets/images/mole-logo.png',
+    url: '/playground/d3/bar-chart',
+    title: '빠 차트',
+    description: '빠 차트를 보세요 📈',
+    img: '/assets/images/bar-chart.png',
     children: Game,
   },
 ];
@@ -29,7 +29,7 @@ export default function Home() {
         <Contents>
           {game.map((game) => (
             <Card>
-              <Link href={`/${game.id}`}>
+              <Link href={`/${game.url}`}>
                 <img src={game.img} alt="game logo" width={130} height={130} />
                 <Title>{game.title}</Title>
                 <Description>{game.description}</Description>
@@ -44,9 +44,9 @@ export default function Home() {
 
 const Contents = styled.ul`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   font-size: ${({ theme }) => theme.fontSize.sm};
-  gap: 1rem;
+  gap: 2rem;
 `;
 
 const Card = styled.li`

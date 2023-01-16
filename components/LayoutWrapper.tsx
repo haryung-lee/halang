@@ -56,7 +56,7 @@ const Title = styled.h1`
 `;
 
 const Container = styled.div`
-  max-width: 42rem;
+  /* max-width: 68rem; */
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 3rem;
