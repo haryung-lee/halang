@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Pacifico';
+  src: url('/fonts/Pacifico-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansKR';
+  src: url('/fonts/IBMPlexSansKR-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansKR';
+  src: url('/fonts/IBMPlexSansKR-Bold.ttf');
+  font-weight: 700;
+}

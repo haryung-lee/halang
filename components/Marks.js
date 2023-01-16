@@ -5,5 +5,6 @@ export const Marks = ({ data, xScale, yScale }) =>
       y={yScale(d.Country)}
       width={xScale(d.Population)}
       height={yScale.bandwidth()}
+      style={{ fill: 'steelblue' }}
     />
   ));

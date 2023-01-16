@@ -97,6 +97,7 @@ const English = styled.span`
   font-weight: 400;
   color: gray;
   margin-left: 0.3rem;
+  font-family: 'Pacifico';
 `;
 
 const Paragraph = styled.p`

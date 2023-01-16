@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 
   html, body {
     width: 100%;
-    font-family: IBMPlexSansKRRegular, sans-serif;
+    font-family: 'IBMPlexSansKRRegular', sans-serif;
 
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -42,8 +42,21 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   @font-face {
-    font-family: 'IBMPlexSansKR';
-    src: url('assets/fonts/IBMPlexSansKR-Regular.ttf');
-    src: url('assets/fonts/IBMPlexSansKR-Bold.ttf'),
-  }
+  font-family: 'Pacifico';
+  src: url('/fonts/Pacifico-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansKR';
+  src: url('/fonts/IBMPlexSansKR-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansKR';
+  src: url('/fonts/IBMPlexSansKR-Bold.ttf');
+  font-weight: 700;
+}
+
 `;
