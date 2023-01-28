@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import { flexCenterColumn } from 'styles/utils';
-import SocialIcon from './socialIcon';
+import SocialIcon from './social-icon';
 import { siteMetadata } from 'data/siteMetadata';
 
 const Footer = () => {

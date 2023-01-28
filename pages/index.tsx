@@ -2,23 +2,19 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import { flexCenter, flexCenterColumn } from 'styles/utils';
 
-import Game from './playground/game/whack-a-mole-game';
-
 const game = [
   {
-    url: '/playground/game/whack-a-mole-game',
+    url: 'playground/game/whack-a-mole-game',
     title: '두더지 게임',
     description: '제한 시간 내 두더지를 잡아보세요✋',
     img: '/images/mole-logo.png',
-    children: Game,
   },
-  // {
-  //   url: '/playground/d3/bar-chart',
-  //   title: '빠 차트',
-  //   description: '빠 차트를 보세요 📈',
-  //   img: '/images/bar-chart.png',
-  //   children: Game,
-  // },
+  {
+    url: 'playground/you-pod-player',
+    title: '유튜브 플레이어',
+    description: '노래 들으면서 공부해요 ✏️',
+    img: '/images/youtube.png',
+  },
   // {
   //   url: '/playground/game/dalgona-game',
   //   title: '달고나 뽑기',
@@ -34,7 +30,7 @@ export default function Home() {
         <Title>소소한 놀이터 🎡</Title>
         <Contents>
           {game.map((game) => (
-            <Card>
+            <Card key={game.title}>
               <Link href={`/${game.url}`}>
                 <img src={game.img} alt="game logo" width={130} height={130} />
                 <Title>{game.title}</Title>

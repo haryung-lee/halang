@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import styled from 'styled-components';
 
-import { Target } from 'components/whackAMoleGame/Target';
+import { Target } from 'components/whack-a-mole-game/Target';
 import { flexCenter } from 'styles/utils';
 
 const TIMER = 30 * 1000;

@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
   * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   }
 
   html, body {
@@ -18,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    -webkit-touch-callout: none; /* iOS Safari */
     user-select: none;
   }
 
@@ -34,6 +36,7 @@ export const GlobalStyle = createGlobalStyle`
 
   input {
     border: none;
+    outline: none; 
   }
 
   a {

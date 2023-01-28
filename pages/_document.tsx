@@ -36,6 +36,10 @@ class MyDocument extends Document {
       <Html lang="ko">
         <Head>
           <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+          />
+          <link
             rel="apple-touch-icon"
             sizes="57x57"
             href="/images/icons/apple-icon-57x57.png"

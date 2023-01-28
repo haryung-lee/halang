@@ -22,10 +22,10 @@
     "**/*.tsx",
     "pages/playground/d3/bar-chart/index.jsx",
     "pages/playground/d3/bar-chart/index.jsx",
-    "components/AxisTop.js",
-    "components/AxisTop.js",
-    "components/AxisTop.js",
-    "components/AxisTop.js"
+    "components/chart/AxisTop.jsTop.js",
+    "components/chart/AxisTop.jsTop.js",
+    "components/chart/AxisTop.jsTop.js",
+    "components/chart/AxisTop.jsTop.js"
   ],
   "exclude": ["node_modules"]
 }
