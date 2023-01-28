@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002Fplayground\u002Fd3\u002Fbar-chart"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
