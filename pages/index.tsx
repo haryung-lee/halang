@@ -2,23 +2,29 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import { flexCenter, flexCenterColumn } from 'styles/utils';
 
-import Game from './whackAMoleGame';
+import Game from './playground/game/whack-a-mole-game';
 
 const game = [
   {
-    url: 'whackAMoleGame',
+    url: '/playground/game/whack-a-mole-game',
     title: '두더지 게임',
     description: '제한 시간 내 두더지를 잡아보세요✋',
-    img: '/assets/images/mole-logo.png',
+    img: '/images/mole-logo.png',
     children: Game,
   },
-  {
-    url: '/playground/d3/bar-chart',
-    title: '빠 차트',
-    description: '빠 차트를 보세요 📈',
-    img: '/assets/images/bar-chart.png',
-    children: Game,
-  },
+  // {
+  //   url: '/playground/d3/bar-chart',
+  //   title: '빠 차트',
+  //   description: '빠 차트를 보세요 📈',
+  //   img: '/images/bar-chart.png',
+  //   children: Game,
+  // },
+  // {
+  //   url: '/playground/game/dalgona-game',
+  //   title: '달고나 뽑기',
+  //   description: '달고나를 뽑아보세요 🍨',
+  //   img: '/images/dalgona.png',
+  // },
 ];
 
 export default function Home() {
@@ -43,8 +49,9 @@ export default function Home() {
 }
 
 const Contents = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+
+  flex-wrap: wrap;
   font-size: ${({ theme }) => theme.fontSize.sm};
   gap: 2rem;
 `;
@@ -63,6 +70,7 @@ const Card = styled.li`
     transform: scale(1.02);
     opacity: 0.8;
   }
+  width: 184px;
 `;
 
 const Title = styled.h2`

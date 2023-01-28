@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
 
-import { GlobalStyle } from 'styles/globalsStyle';
+import { GlobalStyle } from 'styles/globalStyle';
 import { lightTheme, darkTheme } from 'styles/theme';
 import LayoutWrapper from 'components/LayoutWrapper';
 import { siteMetadata } from 'data/siteMetadata';

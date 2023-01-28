@@ -16,13 +16,13 @@ export const Target = ({ onClick, index }: Props) => {
   return (
     <Component className="target" key={index}>
       <img
-        src="/assets/images/hole.png"
+        src="/images/hole.png"
         alt="두더지 구멍"
         width={WIDTH}
         className="hole"
       />
       <img
-        src="/assets/images/mole.png"
+        src="/images/mole.png"
         alt="두더지"
         width={WIDTH}
         height={HEIGHT}
@@ -30,14 +30,14 @@ export const Target = ({ onClick, index }: Props) => {
         onClick={(event) => onClick(event, index, 1)}
       />
       <img
-        src="/assets/images/dead-mole.png"
+        src="/images/dead-mole.png"
         alt="죽은 두더지"
         width={WIDTH}
         height={HEIGHT}
         className="dead-mole hidden"
       />
       <img
-        src="/assets/images/bomb.png"
+        src="/images/bomb.png"
         alt="폭탄"
         width={WIDTH}
         height={HEIGHT}
@@ -45,7 +45,7 @@ export const Target = ({ onClick, index }: Props) => {
         onClick={(event) => onClick(event, index, -1)}
       />
       <img
-        src="/assets/images/touch-bomb.png"
+        src="/images/touch-bomb.png"
         alt="폭탄 터짐"
         width={WIDTH}
         height={HEIGHT}
